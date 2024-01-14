@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = "91f7559421msh48d6296710aba6bp111fedjsn7e1f471c5630"
 
 const API_URL = "https://free-football-soccer-videos.p.rapidapi.com/";
 const API_HEADERS = {

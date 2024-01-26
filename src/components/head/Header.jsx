@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -18,19 +18,19 @@ function Header() {
             <div className="flex items-center lg:order-2">
               <button
                 type="button"
-                className="mx-2  text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
+                className="ml-2 transition ease-in-out delay-150 text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
               >
                 Login
               </button>
               <button
                 type="button"
-                className="mx-2  text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
+                className="ml-2 transition ease-in-out delay-150 text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
               >
                 SignUp
               </button>
             </div>
             <div
-              className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+              className="w-full lg:flex lg:w-auto lg:order-1"
               id="mobile-menu-2"
             >
               <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
@@ -41,8 +41,8 @@ function Header() {
                     `${
                       isActive
                         ? "text-red-600"
-                        : "text-teal-200 hover:text-white"
-                    } block mt-4 lg:inline-block lg:mt-0 mr-4`
+                        : "text-white hover:text-red-300"
+                    } block transition ease-in-out delay-150 hover:bg-slate-900 rounded-2xl ml-auto mt-4 lg:inline-block lg:mt-0 mr-4`
                   }
                 >
                   Home
@@ -54,8 +54,8 @@ function Header() {
                     `${
                       isActive
                         ? "text-red-600"
-                        : "text-teal-200 hover:text-white"
-                    } block mt-4 lg:inline-block lg:mt-0 mr-4`
+                        : "text-white hover:text-red-300"
+                    } block transition ease-in-out delay-150 hover:bg-slate-900 rounded-2xl mt-4 lg:inline-block lg:mt-0 mr-4`
                   }
                 >
                   About
@@ -68,8 +68,8 @@ function Header() {
                     `${
                       isActive
                         ? "text-red-600"
-                        : "text-teal-200 hover:text-white"
-                    } block mt-4 lg:inline-block lg:mt-0 mr-4`
+                        : "text-white hover:text-red-300"
+                    } block transition ease-in-out delay-150 hover:bg-slate-900 rounded-2xl mt-4 lg:inline-block lg:mt-0 mr-4`
                   }
                 >
                   Matches

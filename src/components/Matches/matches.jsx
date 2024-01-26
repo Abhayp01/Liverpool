@@ -67,7 +67,7 @@ export default function Matches() {
           className="mx-4 rounded-full border-double border-4 border-gray-600 font-medium"
           onClick={() => handleChange("ITALY: Serie A")}
         >
-          <div className="bg-gray-400 p-2 rounded-full">Indian Super League</div>
+          <div className="bg-gray-400 p-2 rounded-full">Serie A</div>
         </button>
       </div>
       {error && <p className="error-message">Error: {error}</p>}

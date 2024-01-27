@@ -22,10 +22,9 @@ export default function Matches() {
     try {
       const response = await axios.get(API_URL, { headers: API_HEADERS });
       setMatchesData(response.data);
-      console.log(response.data);
       const filteredData = league
         ? response.data.filter((item) => item.competition.name === league)
-        : response.data; // If league is empty, use all data
+        : response.data;
       const thumbnailLinks = filteredData.map((item) => item.thumbnail);
       setData(thumbnailLinks);
     } catch (error) {

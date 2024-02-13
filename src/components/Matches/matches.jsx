@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 const API_URL = "https://free-football-soccer-videos.p.rapidapi.com/";
 const API_HEADERS = {
-  "X-RapidAPI-Key": "91f7559421msh48d6296710aba6bp111fedjsn7e1f471c5630",
+  "X-RapidAPI-Key": import.meta.env.VITE_API_KEY,
   "X-RapidAPI-Host": "free-football-soccer-videos.p.rapidapi.com",
 };
 
